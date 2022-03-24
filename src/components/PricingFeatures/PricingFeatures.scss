@@ -1,0 +1,26 @@
+.PricingFeatures {
+
+}
+
+.feature-mark{
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  h6.feature-heading{
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #ccc;
+  
+  }
+  @media screen and (max-width:792px) {
+    h6.feature-heading,.feature-name{
+      text-align: center;
+    }
+
+    .PricingFeatures{
+      margin-top: 8rem;
+    }
+  }

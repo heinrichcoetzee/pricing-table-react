@@ -1,0 +1,28 @@
+.PricingHeader {
+    h5{
+        padding: 1rem;
+        color: #fff;
+    }
+    h6{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:792px){
+    .PricingHeader{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        left: 0;
+        background-color: var(--bg-color);
+        .col-3{
+            width: 33.33333333%;
+        }
+        padding-bottom: 1rem;
+    }
+    .tier-desc{
+        font-size: .8rem;
+    }
+}
