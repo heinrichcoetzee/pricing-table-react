@@ -17,11 +17,9 @@ const PricingHeader: FC<PricingHeaderProps> = ({
       {tiers.names.map((name, i) => {
         const bgClassName = i === 0 ? 'primary-bg' : i === 1 ? 'secondary-bg' : 'tertiary-bg';
         return (
-          <>
-            <div className={'col-3 text-center ' + bgClassName} key={i}>
-              <h5>{name}</h5>
-            </div>
-          </>
+          <div className={'col-3 text-center ' + bgClassName} key={i}>
+            <h5>{name}</h5>
+          </div>
         );
       })}
     </div>
@@ -32,11 +30,9 @@ const PricingHeader: FC<PricingHeaderProps> = ({
       </div>
       {tiers.prices.map((price, i) => {
         return (
-          <>
-            <div className="col-3 text-center" key={i}>
-              <h6>€ {price}</h6>
-            </div>
-          </>
+          <div className="col-3 text-center" key={i}>
+            <h6>€ {price}</h6>
+          </div>
         );
       })}
     </div>
@@ -47,11 +43,9 @@ const PricingHeader: FC<PricingHeaderProps> = ({
       </div>
       {tiers.descriptions.map((desc, i) => {
         return (
-          <>
-            <div className="col-3 text-center tier-desc" key={i}>
-              {desc}
-            </div>
-          </>
+          <div className="col-3 text-center tier-desc" key={i}>
+            {desc}
+          </div>
         );
       })}
     </div>

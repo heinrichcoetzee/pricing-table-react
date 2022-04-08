@@ -19,10 +19,8 @@ const PricingTable: FC<PricingTableProps> = () => {
       const pd = await fetchPricing();
       setPricingData(pd);
     };
-    if (!pricingData) {
-      fetchData();
-    }
-  });
+    fetchData();
+  }, []);
 
   return (
     <div className={styles.PricingTable}>

@@ -20,7 +20,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start-backend": "cd backend && tsc && node dist/index.js",
+    "start-backend": "cd backend && npm i && tsc && node dist/index.js",
+    "prestart": "npm run build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
